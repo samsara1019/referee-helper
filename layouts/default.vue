@@ -4,9 +4,9 @@
     <header class="bg-white shadow-md p-4">
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <!-- 로고와 앱 이름 -->
-        <div class="flex items-center mb-4 md:mb-0">
+        <NuxtLink to="/" class="flex items-center mb-4 md:mb-0">
           <div class="text-2xl font-bold text-blue-600">Referee Helper</div>
-        </div>
+        </NuxtLink>
 
         <!-- 네비게이션 링크 -->
         <nav class="flex items-center space-x-6">
@@ -66,7 +66,7 @@
     </div>
 
     <!-- 페이지 콘텐츠가 여기에 들어갑니다 -->
-    <div class="container mx-auto p-6">
+    <div>
       <slot></slot>
     </div>
   </div>
