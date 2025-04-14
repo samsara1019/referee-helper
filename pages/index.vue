@@ -117,7 +117,7 @@
             :initial="{ opacity: 0, scale: 0.9 }"
             :visible="{ opacity: 1, scale: 1, transition: { delay: index * 100 } }"
           >
-            <img :src="`/api/placeholder/400/${250 + index * 10}`" :alt="course.title" class="w-full h-48 object-cover" />
+            <!-- <img :src="`/api/placeholder/400/${250 + index * 10}`" :alt="course.title" class="w-full h-48 object-cover" /> -->
             <div class="p-6">
               <div class="flex items-center justify-between mb-3">
                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">{{ course.category }}</span>
