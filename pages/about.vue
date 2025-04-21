@@ -323,7 +323,10 @@
         <h2 class="text-3xl font-bold mb-6">지금 바로 시작하세요</h2>
         <p class="text-xl mb-8 max-w-3xl mx-auto">Referee Helper와 함께 축구 규칙을 체계적으로 학습하고 더 나은 심판으로 성장해보세요.</p>
         <div class="flex flex-wrap justify-center gap-4">
-          <NuxtLink to="/quiz" class="px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-colors duration-200">
+          <NuxtLink
+            to="/quiz/all"
+            class="px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-colors duration-200"
+          >
             문제 풀기
           </NuxtLink>
           <NuxtLink

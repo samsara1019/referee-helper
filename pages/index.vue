@@ -8,7 +8,7 @@
             <h2 class="text-4xl md:text-5xl font-bold mb-6">심판의 판정 능력,<br />한 단계 더 높이세요</h2>
             <p class="text-xl mb-8">24/25 IFAB 기준의 문제로 실전 감각을 키우고<br />더 정확한 판정을 내릴 수 있습니다.</p>
             <div class="flex flex-wrap gap-4">
-              <NuxtLink to="/quiz" class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg transition-colors duration-200">
+              <NuxtLink to="/quiz/all" class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg transition-colors duration-200">
                 지금 시작하기
               </NuxtLink>
               <NuxtLink
@@ -213,7 +213,7 @@
             <h4 class="font-bold mb-4">바로가기</h4>
             <ul class="space-y-2">
               <li><NuxtLink to="/" class="text-gray-400 hover:text-white transition-colors">홈</NuxtLink></li>
-              <li><NuxtLink to="/quiz" class="text-gray-400 hover:text-white transition-colors">문제 풀이</NuxtLink></li>
+              <li><NuxtLink to="/quiz/all" class="text-gray-400 hover:text-white transition-colors">문제 풀이</NuxtLink></li>
               <!-- <li><NuxtLink to="/quiz/records" class="text-gray-400 hover:text-white transition-colors">학습 자료</NuxtLink></li> -->
               <li><NuxtLink to="/quiz/records" class="text-gray-400 hover:text-white transition-colors">내 기록</NuxtLink></li>
             </ul>

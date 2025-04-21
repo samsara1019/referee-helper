@@ -7,7 +7,7 @@
 
     <div v-else-if="error" class="text-center space-y-4">
       <p class="text-red-500 text-lg">{{ error }}</p>
-      <button @click="goToCalendar" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl shadow">캘린더로 돌아가기</button>
+      <button @click="goToBack" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl shadow">돌아가기</button>
     </div>
 
     <div v-else-if="step === 'quiz'" class="w-full max-w-lg space-y-8 animate-slide-in">
@@ -220,6 +220,10 @@ function nextQuestion() {
 // 캘린더 페이지로 이동
 function goToCalendar() {
   router.push('/quiz/records');
+}
+
+function goToBack() {
+  router.go(-1);
 }
 
 // 옵션 클래스 설정

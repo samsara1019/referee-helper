@@ -11,6 +11,23 @@
         <!-- 네비게이션 링크 -->
         <nav class="flex items-center space-x-6">
           <NuxtLink
+            to="/quiz/all"
+            class="text-gray-700 hover:text-blue-600 font-medium transition flex items-center"
+            :class="{ 'text-blue-600': $route.path === '/quiz/all' }"
+          >
+            <span class="mr-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                />
+              </svg>
+            </span>
+            전체 문제풀기
+          </NuxtLink>
+          <NuxtLink
             to="/quiz"
             class="text-gray-700 hover:text-blue-600 font-medium transition flex items-center"
             :class="{ 'text-blue-600': $route.path === '/quiz' }"
@@ -25,7 +42,7 @@
                 />
               </svg>
             </span>
-            문제풀기
+            오늘의 문제풀기
           </NuxtLink>
 
           <NuxtLink
